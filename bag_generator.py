@@ -4,12 +4,11 @@ import math
 import operator
 import numpy as np
 
+
 HEIGHT = 500
 WIDTH = 600
 
 root = tk.Tk()
-
-
 
 
 expression = ""
@@ -18,7 +17,7 @@ expression_two = float()
 
 
 def add(value):
-
+    
     global expression
     expression += value
     print(expression)
@@ -36,7 +35,6 @@ def paper_calculate():
     result = eval(value)
     paper_result = str(result * .20)
     label_result['text'] = f' Your total is ${(paper_result)[:4]} have a great day!'
-
 
 
 def clear():
@@ -109,7 +107,6 @@ button_three.place( relx=0.65, rely=0.75, relwidth=0.1)
 
 button_zero= tk.Button(frame, text="0", bg="Silver", command=lambda: add("0"))
 button_zero.place( relx=0.45, rely=0.85, relwidth=0.1)
-
 
 button_plastic= tk.Button(frame, text="Plastic", bg="Silver", command=lambda: plastic_calculate())
 button_plastic.place( relx=0, rely=0.85, relheight=0.15, relwidth=0.25)
