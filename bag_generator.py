@@ -69,15 +69,6 @@ label_result.place( rely = 0.2, relwidth=1, relheight=0.25)
 
 #BUTTONS
 
-#plastic_button = tk.Button(frame, text = "Plastic", bg="Silver", command=lambda: bag("How many bags are you using?"), bd=5)
-#plastic_button.place(relx=0, rely=0.55, relheight=0.15, relwidth=0.25)
-
-#paper_button = tk.Button(frame, text = "Paper", bg="Silver",command=lambda: bag("How many bags are you using?"))
-#paper_button.place(relx=0.75, rely=0.55, relheight=0.15, relwidth=0.25)
-
-#no_bag_button = tk.Button(frame, text = "No/Own Bag", bg="Silver",command=lambda: bag("Please proceed to scan"))
-#no_bag_button.place(relx=0, rely=0.85, relheight=0.15, relwidth=0.25)
-
 button_seven = tk.Button(frame, text="7", bg="Silver", command=lambda: add("7"))
 button_seven.place( relx=0.25 , rely=0.55, relwidth=0.1)
 
@@ -119,8 +110,6 @@ clear_button.place(relx=0.85, rely=0.65, relwidth=0.1)
 
 
 
-root.mainloop() 
-
-
-
+root.mainloop()
                     
+
